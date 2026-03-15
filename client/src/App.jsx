@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-
+import Header from './componants/Header'
+import Footer from './componants/Footer'
+import Home from './pages/Home'
+import Product from './pages/Product'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
    <div>
-    <h1 class="text-3xl ">
-    Hello world!
-    hii 
-  </h1>
+  <Header/>
+  <Home/>
+  <Footer/> 
+  {/* <Product/> */}
    </div>
   )
 }
