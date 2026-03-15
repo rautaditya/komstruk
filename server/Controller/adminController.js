@@ -22,7 +22,8 @@ exports.loginAdmin = async (req,res)=>{
 
     res.json({
         message:"Login Successful",
-        token:token
+        token:token,
+        message:"admin is logged in"
     })
 
 }
