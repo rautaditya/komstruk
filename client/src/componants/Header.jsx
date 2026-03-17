@@ -36,6 +36,7 @@ export default function Header() {
         >
           komstruk
         </a>
+        <a href="/admin/login">Login</a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
@@ -118,6 +119,8 @@ export default function Header() {
             >
               {link.label}
             </a>
+            
+
           ))}
         </nav>
       </div>
