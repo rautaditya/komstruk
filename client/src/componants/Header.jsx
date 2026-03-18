@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Why Komstruk", href: "#why" },
-  { label: "Products", href: "/products" },
-  { label: "Sustainability", href: "/sustainability" },
-  { label: "Career", href: "#career" },
-  { label: "Recycling", href: "#recycling" },
+  { label: "ABOUT US", href: "/about" },
+  { label: "PROJECTS", href: "/products" },
+  { label: "BLOGS", href: "/blogs" },
+  { label: "CAREERS", href: "/career " },
+  { label: "CONTACT US", href: "/contact_us" },
 ];
 
 export default function Header() {
