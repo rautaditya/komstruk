@@ -22,14 +22,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./admin/Login";
 import Home from './pages/Home'
+import Product from './pages/Product'
+import Sustainability from './pages/Sustainability'
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin/login" element={<Login />} />
-
-    
+        <Route path="/products" element={<Product />} />
+       <Route path="/sustainability" element={<Sustainability />} />
       </Routes>
     </BrowserRouter>
   );

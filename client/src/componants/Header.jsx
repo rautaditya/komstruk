@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "Why Komstruk", href: "#why" },
-  { label: "Products", href: "#products" },
-  { label: "Sustainability", href: "#sustainability" },
+  { label: "Products", href: "/products" },
+  { label: "Sustainability", href: "/sustainability" },
   { label: "Career", href: "#career" },
   { label: "Recycling", href: "#recycling" },
 ];
