@@ -526,7 +526,7 @@ export default function Applications() {
         </div>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }

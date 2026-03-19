@@ -576,7 +576,7 @@ export default function Products() {
         </div>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }

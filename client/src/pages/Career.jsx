@@ -490,7 +490,7 @@ export default function Career() {
         </div>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }

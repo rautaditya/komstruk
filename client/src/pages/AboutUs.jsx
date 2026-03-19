@@ -755,7 +755,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <Footer />
+      
     </main>
   );
 }
