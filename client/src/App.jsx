@@ -1,42 +1,35 @@
-// import { useState } from 'react'
-// import './App.css'
-// import Header from './componants/Header'
-// import Footer from './componants/Footer'
-// import Home from './pages/Home'
-// import Product from './pages/Product'
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//    <div>
-//   <Header/>
-//   <Home/>
-//   <Footer/> 
-
-//   {/* <Product/> */}
-//    </div>
-//   )
-// }
-
-// export default App
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./admin/Login";
-import About from './pages/About us'
-import Projects from './pages/Projects'
-import Blogs from './pages/Blogs'
-import Career from './pages/Career'
+import Products from "./pages/Products";
+import Blogs from "./pages/Blogs";
+import Career from "./pages/Career";
 import Contact_us from "./pages/Contact_us";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Application from "./pages/Application"
+import MainLayout from "./layouts/MainLayout";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<About us />} />
+
+        {/* ✅ Routes WITH Header + Footer */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/applications" element={<Application/>} />
+          
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/contact_us" element={<Contact_us />} />
+        </Route>
+
+        {/* ❌ Routes WITHOUT Header/Footer */}
         <Route path="/admin/login" element={<Login />} />
-        <Route path="/projects" element={<Projects/>} />
-       <Route path="/blogs" element={<Blogs/>} />
-       <Route path="/career" element={<Career/>} />
-       <Route path="/contact_us" element={<Contact_us/>} />
-      </Routes> 
+
+      </Routes>
     </BrowserRouter>
   );
 }
