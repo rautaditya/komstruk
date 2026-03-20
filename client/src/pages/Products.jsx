@@ -295,7 +295,7 @@ export default function Products() {
                 <p className="text-sm text-gray-500 leading-7 font-light mb-8">
                   This allows for easy incorporation of polyaniline into multiple solvent systems and other polymer compositions. Also, in many applications, along with improved dispersion, the conductivity is also increased.
                 </p>
-                <a href="#dispersion"
+                <a href="/polymerdispersion"
                   className="inline-flex items-center gap-2 px-8 py-4 text-white font-medium text-sm tracking-wide"
                   style={{ background:"linear-gradient(90deg,#16a34a,#15803d)", borderRadius:30, boxShadow:"0 4px 20px rgba(22,163,74,0.35)", transition:"transform .25s,box-shadow .25s" }}
                   onMouseOver={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow="0 8px 28px rgba(22,163,74,0.45)"}}

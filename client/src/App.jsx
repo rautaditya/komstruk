@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Application from "./pages/Application"
 import MainLayout from "./layouts/MainLayout";
-
+import PolymerDispersion from "./pages/PolymerDispersion"
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/applications" element={<Application/>} />
-          
+          <Route path="/polymerdispersion" element={<PolymerDispersion/>} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact_us" element={<Contact_us />} />
