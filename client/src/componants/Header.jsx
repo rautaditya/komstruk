@@ -13,7 +13,7 @@ const navLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("Why Komstruk");
+  const [activeLink, setActiveLink] = useState("Why ElektroactivX ");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -36,7 +36,7 @@ export default function Header() {
           className="text-white font-bold text-2xl tracking-tight select-none"
           style={{ fontFamily: "'Syne', sans-serif" }}
         >
-          komstruk
+          ElektroactivX 
         </a>
         <a href="/admin/login">Login</a>
 
