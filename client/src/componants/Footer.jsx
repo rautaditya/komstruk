@@ -12,13 +12,13 @@ const Footer = () => {
           <div className="lg:w-1/4 flex flex-col gap-6">
             {/* Logo */}
             <a href="/" className="text-white text-3xl font-bold tracking-tight">
-              northvolt
+              ElektroactivX
             </a>
 
             {/* Address */}
             <div>
               <p className="text-gray-400 text-sm font-light leading-relaxed">
-                Northvolt AB ~ Alströmergatan 20
+                ElektroactivX AB ~ Alströmergatan 20
               </p>
               <p className="text-gray-400 text-sm font-light leading-relaxed">
                 SE-112 47, Stockholm, Sweden
@@ -31,8 +31,8 @@ const Footer = () => {
             </a>
 
             {/* Email */}
-            <a href="mailto:hi@northvolt.com" className="text-white text-sm underline underline-offset-4 hover:text-emerald-400 transition-colors w-fit">
-              hi@northvolt.com
+            <a href="mailto:hi@elektroactivx.com" className="text-white text-sm underline underline-offset-4 hover:text-emerald-400 transition-colors w-fit">
+              hi@elektroactivx.com
             </a>
 
             {/* Social icons */}
@@ -150,7 +150,7 @@ const Footer = () => {
               <div>
                 <p className="text-white text-sm font-bold mb-4">Manufacturing</p>
                 <ul className="flex flex-col gap-2">
-                  {["Northvolt Ett", "Northvolt Labs", "Northvolt Six"].map((item) => (
+                  {["ElektroactivX Ett", "ElektroactivX Labs", "ElektroactivX Six"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-gray-400 text-sm font-light hover:text-white transition-colors">{item}</a>
                     </li>
@@ -160,7 +160,7 @@ const Footer = () => {
               <div>
                 <p className="text-white text-sm font-bold mb-4">Career</p>
                 <ul className="flex flex-col gap-2">
-                  {["Life at Northvolt", "Categories", "Locations", "Joining us", "Students", "All roles"].map((item) => (
+                  {["Life at ElektroactivX", "Categories", "Locations", "Joining us", "Students", "All roles"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-gray-400 text-sm font-light hover:text-white transition-colors">{item}</a>
                     </li>
@@ -174,7 +174,7 @@ const Footer = () => {
 
         {/* ── Bottom bar ── */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 text-xs font-light">© 2025 Northvolt. All rights reserved.</p>
+          <p className="text-gray-600 text-xs font-light">© 2025 ElektroactivX. All rights reserved.</p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Use", "Cookie Settings"].map((link) => (
               <a key={link} href="#" className="text-gray-600 text-xs hover:text-white transition-colors font-light">
