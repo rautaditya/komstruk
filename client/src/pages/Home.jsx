@@ -18,7 +18,33 @@ function useInView(threshold = 0.15) {
   }, [threshold]);
   return [ref, inView];
 }
-
+const applications = [
+  {
+    title: "Corrosion Protection",
+    desc: "This is an extremely powerful corrosion protection principle. It was invented by Ormecon (Germany).",
+    img: "https://images.unsplash.com/photo-1509395176047-4a66953fd231",
+  },
+  {
+    title: "EMI Shielding",
+    desc: "Using our highly conductive masterbatch, products can be developed for medium requirements in EMI shielding.",
+    img: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0",
+  },
+  {
+    title: "Permanent Antistatic",
+    desc: "Using our highly conductive masterbatch, products can be developed for various antistatic applications.",
+    img: "https://images.unsplash.com/photo-1581090700227-1e8a7c2f63f0",
+  },
+  {
+    title: "Electroluminescence",
+    desc: "With our highly conductive masterbatch, products can be developed for flexible and easy display.",
+    img: "https://images.unsplash.com/photo-1611175694983-36e1d8c3c8e3",
+  },
+  {
+    title: "Solid Electrolyte",
+    desc: "Using specially prepared dispersed polyaniline, high-performing solid state capacitor solutions can be developed.",
+    img: "https://images.unsplash.com/photo-1581091215367-59ab6b5e88ad",
+  },
+];
 /* ════════════════════════════════════════
    ANIMATED SECTION WRAPPER
 ════════════════════════════════════════ */
@@ -130,6 +156,7 @@ const features = [
         <line x1="1" y1="12" x2="3" y2="12" />
         <line x1="21" y1="12" x2="23" y2="12" />
       </svg>
+      
     ),
   },
 ];
@@ -524,37 +551,43 @@ export default function Home() {
         {/* ═══════════════════════════════════════
             5. CTA BANNER
         ═══════════════════════════════════════ */}
-        <section className="relative overflow-hidden bg-green-600 px-8 md:px-24 py-20 md:py-28">
-          {/* Decorative circles */}
-          <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-green-500/40" />
-          <div className="absolute -bottom-32 -left-10 w-96 h-96 rounded-full bg-green-700/40" />
+    <section className="bg-gray-100 py-16 px-6">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-semibold text-gray-800">
+          Applications
+        </h2>
+        <div className="w-16 h-1 bg-green-500 mx-auto mt-3 rounded"></div>
+      </div>
 
-          <Reveal>
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 max-w-screen-xl mx-auto">
-              <div>
-                <p className="text-green-200 text-xs tracking-[0.25em] uppercase mb-3">Get in Touch</p>
-                <h2 className="font-display text-4xl md:text-5xl font-black text-white leading-tight">
-                  Ready to explore<br />our solutions?
-                </h2>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="/contact_us"
-                  className="inline-flex items-center gap-2 bg-white text-green-700 hover:bg-green-50 font-semibold text-sm px-8 py-4 transition-colors"
-                >
-                  Contact Us
-                </a>
-                <a
-                  href="/products"
-                  className="inline-flex items-center gap-2 border border-white/40 text-white hover:bg-white/10 font-medium text-sm px-8 py-4 transition-colors"
-                >
-                  View Products
-                </a>
-              </div>
+      {/* Cards */}
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        {applications.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full h-40 object-cover"
+            />
+
+            <div className="p-5 text-center">
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                {item.title}
+              </h3>
+
+              <div className="w-10 h-0.5 bg-green-500 mx-auto mb-3"></div>
+
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {item.desc}
+              </p>
             </div>
-          </Reveal>
-        </section>
-
+          </div>
+        ))}
+      </div>
+    </section>
       </div>
     </>
   );
