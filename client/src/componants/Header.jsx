@@ -38,7 +38,7 @@ export default function Header() {
         >
           ElektroactivX 
         </a>
-        <a href="/admin/login">Login</a>
+       
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">

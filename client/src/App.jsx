@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./admin/Login";
+
 import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
 import Career from "./pages/Career";
@@ -26,8 +26,6 @@ function App() {
           <Route path="/contact_us" element={<Contact_us />} />
         </Route>
 
-        {/* ❌ Routes WITHOUT Header/Footer */}
-        <Route path="/admin/login" element={<Login />} />
 
       </Routes>
     </BrowserRouter>
