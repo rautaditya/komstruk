@@ -4,7 +4,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: 'classic', // 👈 CHANGE THIS
+      jsxRuntime: 'automatic',
+      babel: {
+        presets: [],
+        plugins: [],
+      },
     }),
   ],
 })
